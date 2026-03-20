@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-03-17T12:31:05.362Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-17T10:57:17.371Z",
+    "lastRunVersion": "2026.3.13",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "xiaomi:default": {
+        "provider": "xiaomi",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "xiaomi": {
+        "baseUrl": "https://api.xiaomimimo.com/anthropic",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "mimo-v2-flash",
+            "name": "Xiaomi MiMo V2 Flash",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "bailian": {
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "sk-e865707b17b64c468fa9f2de1f0d3a9d",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3.5-plus",
+            "name": "qwen3.5-plus",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3.5-plus-2026-02-15",
+            "name": "qwen3.5-plus-2026-02-15",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3.5-flash",
+            "name": "qwen3.5-flash",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3.5-flash-2026-02-23",
+            "name": "qwen3.5-flash-2026-02-23",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3.5-122b-a10b",
+            "name": "qwen3.5-122b-a10b",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-2026-01-23",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3.5-27b",
+            "name": "qwen3.5-27b",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-vl-plus-2025-12-19",
+            "name": "qwen3-vl-plus-2025-12-19",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen-flash",
+            "name": "qwen-flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 32768
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-plus",
+            "name": "qwen3-coder-plus",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-flash",
+            "name": "qwen3-coder-flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "MiniMax-M2.1",
+            "name": "MiniMax-M2.1",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 32768
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 32768
+          },
+          {
+            "id": "glm-4.7",
+            "name": "glm-4.7",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 32768
+          },
+          {
+            "id": "glm-5",
+            "name": "glm-5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 32768
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 98304
+          },
+          {
+            "id": "tongyi-xiaomi-analysis-pro",
+            "name": "tongyi-xiaomi-analysis-pro",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 4096
+          },
+          {
+            "id": "tongyi-xiaomi-analysis-flash",
+            "name": "tongyi-xiaomi-analysis-flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 4096
+          }
+        ]
+      },
+      "custom-v2-aicodee-com": {
+        "baseUrl": "https://v2.aicodee.com",
+        "apiKey": "sk-1bb6d563014a124d4c78e356c02d826d",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "MiniMax-M2.5-highspeed",
+            "name": "MiniMax-M2.5-highspeed (Custom Provider)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "custom-v2-aicodee-com/MiniMax-M2.5-highspeed"
+      },
+      "models": {
+        "xiaomi/mimo-v2-flash": {
+          "alias": "Xiaomi"
+        },
+        "xiaomi/mimo-claw-0301": {},
+        "qwen-portal/coder-model": {},
+        "bailian/qwen3.5-plus": {},
+        "bailian/qwen3.5-plus-2026-02-15": {},
+        "bailian/qwen3.5-flash": {},
+        "bailian/qwen3.5-flash-2026-02-23": {},
+        "bailian/qwen3.5-122b-a10b": {},
+        "bailian/qwen3-max-2026-01-23": {},
+        "bailian/qwen3.5-27b": {},
+        "bailian/qwen3-vl-plus-2025-12-19": {},
+        "bailian/qwen-flash": {},
+        "bailian/qwen3-coder-next": {},
+        "bailian/qwen3-coder-plus": {},
+        "bailian/qwen3-coder-flash": {},
+        "bailian/MiniMax-M2.1": {},
+        "bailian/MiniMax-M2.5": {},
+        "bailian/glm-4.7": {},
+        "bailian/glm-5": {},
+        "bailian/kimi-k2.5": {},
+        "bailian/tongyi-xiaomi-analysis-pro": {},
+        "bailian/tongyi-xiaomi-analysis-flash": {},
+        "custom-v2-aicodee-com/MiniMax-M2.5-highspeed": {}
+      },
+      "workspace": "/Users/ethan/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      }
+    }
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "gemini"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a9381b8ee1b81ceb",
+      "appSecret": "YZTwUFTZvimNaM6s4QmMAcnE8eHEzdwx",
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "requireMention": true,
+      "dmPolicy": "allowlist",
+      "groupPolicy": "open",
+      "allowFrom": [
+        "ou_7d7c0ffed61b0d6098b16fb8328987c1"
+      ],
+      "groupAllowFrom": [],
+      "streaming": true
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "1b8b8e9623fc56acfee21436850d3c2cd7f6ac9266ef6ae4"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-lark",
+      "qwen-portal-auth"
+    ],
+    "entries": {
+      "feishu": {
+        "enabled": false
+      },
+      "openclaw-lark": {
+        "enabled": true
+      },
+      "qwen-portal-auth": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-lark": {
+        "source": "npm",
+        "spec": "@larksuite/openclaw-lark",
+        "installPath": "/Users/ethan/.openclaw/extensions/openclaw-lark",
+        "version": "2026.3.15",
+        "resolvedName": "@larksuite/openclaw-lark",
+        "resolvedVersion": "2026.3.15",
+        "resolvedSpec": "@larksuite/openclaw-lark@2026.3.15",
+        "integrity": "sha512-YGk63CgYG+YDUO2+TxdSPJZA6km52OpqAqf26vZHMUqawEKhiT4bcfD5JHh6VGazjUwRk5Bze1UyVKncc0csBA==",
+        "shasum": "997cb8ee9cf66dcd3a24477cb5f59f5fb1a57fff",
+        "resolvedAt": "2026-03-17T02:16:54.304Z",
+        "installedAt": "2026-03-17T02:17:02.394Z"
+      }
+    }
+  }
+}
